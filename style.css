@@ -161,6 +161,11 @@ main {
   border-color: var(--primaryStroke);
 }
 
+section {
+  width: 78%;
+  margin: auto;
+}
+
 .categories ul {
   display: flex;
   gap: 40px;
@@ -182,11 +187,61 @@ main {
 }
 
 .card-row {
+  margin: 30px 0px;
   display: flex;
   gap: 30px;
 }
 
 .card {
   width: 380px;
-  height: 123px ;
 }
+
+.card > img {
+  width: 380px;
+  height: 235px;
+}
+
+.text {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid var(--primaryStroke);
+  border-radius: 0px 0px 15px 15px;
+  text-align: left;
+  padding: 10px;
+}
+
+.text h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pagination {
+  margin-top: 25px;
+}
+
+.pag-row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.pag {
+  background: #fff;
+  padding: 10px 20px;
+  border: 2px solid var(--primaryBg);
+  border-radius: 5px;
+  color: var(--primaryBg);
+}
+
+#active-pag {
+  background: #000;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  color: #fff;
+}
+
